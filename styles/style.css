@@ -140,14 +140,21 @@ label {
     transition: transform 2s;
     transform-style: preserve-3d;
 }
-
+.para{
+    position:absolute;
+    left:50%;
+  }
+.skills-content{
+    width: 400px;
+height: 400px;
+}
 .container:hover #card{
     transform: rotateY(180deg);
 }
 
 #front, #back {
     position: absolute;
-    width: 340px;
+    width: 350px;
     height: 260px;
     border-radius: 20%;
     -webkit-backface-visibility: hidden;
@@ -171,9 +178,122 @@ label {
     gap: 20px;
 }
 #about {
-    background: burlywood;
-    height: 100vh;
     align-items: center;
     justify-content: center;
-    
 }
+.slide {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+template {
+  background-color: #f2f2fc;
+}
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 0%;
+  }
+  to {
+    margin-right: 0%;
+    max-width: 100%;
+  }
+}
+
+/* SLIDE  */
+.slide {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  template {
+    background-color: #f2f2fc;
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 0%;
+      width: 0%;
+      
+    }
+    to {
+      margin-right: 0%;
+      max-width: 100%;
+    }
+  }
+
+.subtitlee{
+    color: palevioletred;
+ }
+
+ #skills{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .rating {
+   background-color: palevioletred;
+ }
+ .bar {
+   background-color: rgb(223, 223, 223);
+ }
+ /* about me */
+ .row {
+    display: flex;
+  }
+  .column {
+    flex: 60% 40%;
+    padding: 16px;
+    height: 250px;
+  }
+#image {
+    width: 300px;
+    height: 300px;
+}
+#head {
+    padding-top: 150px;
+}
+/* .skill{
+    width: 160px;
+    height: 160px; */
+    /* background: cornflowerblue; */
+    /* position: relative;
+} */
+/* .outer{
+    height: 160px;
+    width: 160px;
+    border: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px --1px rgba(0, 0, 0, 0.15), 6px 6px 10px --1px rgba(255, 255, 255, 0.7);
+}
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset 4px 4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+#number {
+    font-weight: 600;
+    color: #555;
+} */
+/* circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+} */
+
+/* @keyframes anim{
+    100%{
+        stroke-dashoffset: 94;
+    }
+} */
